@@ -1,0 +1,29 @@
+.gallery{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.gallery_title{
+    width: 100%;
+    height: 60px;
+    float: left;
+    font: bold 1.1rem sans-serif;
+    padding: 20px;
+    border-bottom: 1px solid silver;
+}
+.gallery_img{
+    width: 100%;
+    height: calc(100% - 60px);
+    float: left;
+    overflow-y: hidden;
+}
+.gallery_img img{
+    width: 500px;
+    height: 300px;
+    margin: 1px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.gallery_img img:hover{
+    transform: scale(0.97);
+}

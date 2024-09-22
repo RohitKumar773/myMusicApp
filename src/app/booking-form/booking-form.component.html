@@ -1,0 +1,24 @@
+<div class="form">
+    <div class="boxes">
+        <div class="title">Book Your Ticket</div>
+        <div class="close_btn">
+            <mat-icon mat-dialog-close>cancel</mat-icon>
+            <!-- <mat-icon style="cursor: pointer;" (click)="closeDialog()">close</mat-icon> -->
+        </div>
+    </div>
+    <div class="boxes">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter your name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter Your Email" type="email" required #message>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Mobile No.</mat-label>
+            <input matInput placeholder="Enter Your Mobile Number" type="number">
+        </mat-form-field>
+        <button mat-raised-button color="warn">Submit</button>
+    </div>
+</div>

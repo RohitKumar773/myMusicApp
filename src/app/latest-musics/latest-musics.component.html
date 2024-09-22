@@ -1,0 +1,276 @@
+<div class="mini_box_navigation_music">
+
+    <div class="boxes">
+        <div class="img_section">
+            <img src="/assets/singer.jpg" alt="">
+        </div>
+        <div class="name_and_title">
+            <h1>Arjit Singh</h1>
+            <h4 style="margin-top: -10px;">Watch all singers</h4>
+        </div>
+        <div class="navigation_btn">
+            <button mat-icon-button style="background-color: rgb(223, 0, 82);" routerLink="/artist">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="boxes">
+        <div class="img_section">
+            <img src="/assets/singer.jpg" alt="">
+        </div>
+        <div class="name_and_title">
+            <h1>All Music</h1>
+            <h4 style="margin-top: -10px;">Watch all Musics</h4>
+        </div>
+        <div class="navigation_btn">
+            <button mat-icon-button style="background-color: rgb(223, 0, 82);" routerLink="/all_music">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="boxes">
+        <div class="img_section">
+            <img src="/assets/singer.jpg" alt="">
+        </div>
+        <div class="name_and_title">
+            <h1>Our Gallery</h1>
+            <h4 style="margin-top: -10px;">Watch Our Gallery</h4>
+        </div>
+        <div class="navigation_btn">
+            <button mat-icon-button style="background-color: rgb(223, 0, 82);" routerLink="/gallery">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="latest_music_section">
+    <div class="title">Listen Latest Musics</div>
+    <div class="music_area">
+
+        <!-- music 1 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album1.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Aam Jahe Munde
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic1()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic1()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+
+                <div class="btns">
+                    <a href="assets/audio1.mp3" style="color: white;">
+                        <mat-icon>get_app</mat-icon>
+                    </a>
+                </div>
+
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 2 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album5.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Tere Vaste
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic2()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic2()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 3 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album2.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Jab Tak
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic3()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic3()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 4 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album3.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Tera Naam
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic4()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic4()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 5 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album8.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Mere naam tu
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic5()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic5()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 6 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album4.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Khusi jab bhi teri
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic6()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic6()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 7 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album6.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Raataan Lambiyan
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic7()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic7()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+        <!-- music 8 -->
+        <div class="music_card">
+            <div class="album_img">
+                <img src="/assets/album7.jpg" alt="">
+            </div>
+            <div class="album_name">
+                Satranga Ishq
+            </div>
+            <div class="share_and_play_btn">
+                <div class="btns" (click)="playMusic8()">
+                    <mat-icon>play_circle_filled</mat-icon>
+                </div>
+                <div class="btns" (click)="stopMusic8()">
+                    <mat-icon>pause_circle_outline</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>get_app</mat-icon>
+                </div>
+                <div class="btns">
+                    <mat-icon>share</mat-icon>
+                </div>
+            </div>
+            <div class="reviews">
+                <ngb-rating [rate]="3" />
+            </div>
+        </div>
+
+
+    </div>
+</div>
