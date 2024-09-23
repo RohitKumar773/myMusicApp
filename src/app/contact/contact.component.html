@@ -1,4 +1,4 @@
-<div class="contact">
+<div class="contact" data-aos="flip-down" data-aos-duration="1500">
     <div class="contact_title">
         CONTACT US
     </div>
@@ -7,19 +7,22 @@
             <img src="assets/contact.png" alt="">
         </div>
         <div class="c_box">
-            <mat-form-field>
-                <mat-label>Name</mat-label>
-                <input matInput placeholder="Enter your name">
-            </mat-form-field>
-            <mat-form-field>
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Enter Your Email">
-            </mat-form-field>
-            <mat-form-field>
-                <mat-label>Mobile No.</mat-label>
-                <input matInput placeholder="Enter Your Mobile Number" type="number">
-            </mat-form-field>
-            <button mat-raised-button color="warn">Submit</button>
+            <form>
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Enter your name" #name>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter Your Email" #message>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Mobile No.</mat-label>
+                    <input matInput placeholder="Enter Your Mobile Number" type="number">
+                </mat-form-field>
+            </form>
+            <button mat-raised-button (click)="submitForm(name.value, message.value)"
+               style="background-color: rgb(223, 0, 82); color: white;" >Submit</button>
         </div>
     </div>
 </div>

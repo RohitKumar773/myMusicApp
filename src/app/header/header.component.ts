@@ -8,6 +8,10 @@ import { BookingFormComponent } from '../booking-form/booking-form.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent{
+
+  windowscroll(){
+    window.scroll(0,0);
+  }
   
 
   constructor(

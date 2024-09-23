@@ -1,32 +1,32 @@
-.about{
-    width: 100%;
-    height: auto;
-    float: left;
+.about {
+  width: 100%;
+  height: auto;
+  float: left;
 }
-.about_img{
-    width: 100%;
-    height: 500px;
-    float: left;
+.about_img {
+  width: 100%;
+  height: 500px;
+  float: left;
 }
-.about_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.about_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.about_title{
-    width: 100%;
-    height: 60px;
-    float: left;
-    font: bold 1.1rem sans-serif;
-    padding: 20px;
-    border-bottom: 1px solid silver;
+.about_title {
+  width: 100%;
+  height: 60px;
+  float: left;
+  font: bold 1.1rem sans-serif;
+  padding: 20px;
+  border-bottom: 1px solid silver;
 }
-.about_content{
-    width: 100%;
-    height: calc(100% - 500px);
-    padding: 20px;
-    line-height: 40px;
-    text-align: justify;
-    font-size: 1rem;
-    float: left;
+.about_content {
+  width: 100%;
+  height: calc(100% - 500px);
+  padding: 20px;
+  line-height: 40px;
+  text-align: justify;
+  font-size: 1rem;
+  float: left;
 }

@@ -9,7 +9,7 @@
     <div class="boxes">
         <mat-form-field>
             <mat-label>Name</mat-label>
-            <input matInput placeholder="Enter your name">
+            <input matInput placeholder="Enter your name" #name>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Email</mat-label>
@@ -17,8 +17,9 @@
         </mat-form-field>
         <mat-form-field>
             <mat-label>Mobile No.</mat-label>
-            <input matInput placeholder="Enter Your Mobile Number" type="number">
+            <input matInput placeholder="Enter Your Mobile Number" type="number" #action>
         </mat-form-field>
-        <button mat-raised-button color="warn">Submit</button>
+        <button mat-raised-button style="background-color: rgb(223, 0, 82);color: white;"
+            (click)="submitButton(name.value, message.value, action.value)">Submit</button>
     </div>
 </div>

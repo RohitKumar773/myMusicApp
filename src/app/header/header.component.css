@@ -64,3 +64,52 @@ header {
 #booking_btn:hover {
   background-color: rgb(255, 0, 93);
 }
+#mobile_menu {
+  display: none;
+}
+
+.offcanvas-body button {
+  width: 100%;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.offcanvas-body {
+  background: linear-gradient(to top, #332d3b, #242546);
+}
+
+.offcanvas-header {
+  background: linear-gradient(to top, #242546, #4b3653);
+  color: white;
+}
+
+/* media query start from here  */
+
+@media (max-width: 900px) and (min-width: 0px) {
+  .menu ul li {
+    display: none;
+  }
+  .menu ul #booking_btn {
+    display: none;
+  }
+  .logo {
+    padding: 10px;
+  }
+  #mobile_menu {
+    display: block;
+    color: white;
+    margin-right: -20px;
+  }
+  #icon {
+    width: auto;
+    height: auto;
+    font-size: 28px;
+  }
+  /* .offcanvas{
+    background-color: rgb(40, 38, 53);
+  }
+  .offcanvas-title{
+    color: white;
+  } */
+}

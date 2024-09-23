@@ -1,84 +1,147 @@
-.all_music{
-    width: 100%;
-    height: auto;
-    float: left;
+.all_music {
+  width: 100%;
+  height: auto;
+  float: left;
 }
-.all_music_title{
-    width: 100%;
-    height: 60px;
-    float: left;
-    font: bold 1.1rem sans-serif;
-    padding: 20px;
-    border-bottom: 1px solid silver;
+.all_music_title {
+  width: 100%;
+  height: 60px;
+  float: left;
+  font: bold 1.1rem sans-serif;
+  padding: 20px;
+  border-bottom: 1px solid silver;
 }
-.music_list{
+.music_area {
+  width: 80%;
+  height: calc(100% - 60px);
+  margin-left: 10%;
+}
+.music_card {
+  width: 250px;
+  height: 350px;
+  background-color: rgb(23, 24, 39);
+  float: left;
+  margin-left: 3.2%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 3%;
+}
+.music_card:hover {
+  transform: scale(1.04);
+}
+.album_img {
+  width: 100%;
+  height: 180px;
+  float: left;
+}
+.album_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album_name {
+  width: 100%;
+  height: 60px;
+  float: left;
+  font: bold 1.2rem sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share_and_play_btn {
+  width: 100%;
+  height: 60px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(196, 14, 44);
+  margin-right: 10px;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews {
+  width: 100%;
+  height: calc(100% - 300px);
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1rem sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+/* media query start from here  */
+
+@media (max-width: 1200px) and (min-width: 0px) {
+  .music_area {
+    width: 850px;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 0px) {
+  .img_section {
+    width: 20%;
+  }
+  .name_and_title h1 {
+    padding: 30px 0px 0px;
+  }
+  .name_and_title h4 {
+    padding: 0;
+  }
+  .navigation_btn {
+    width: calc(100% - 70%);
+  }
+  .music_area {
     width: 80%;
-    height: calc(100% - 60px);
     margin-left: 10%;
+  }
 }
-.music_card{
-    width: 250px;
-    height: 350px;
-    background-color: rgb(23, 24, 39);
-    float: left;
-    margin-left: 3.2%;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    transition: 0.5s;
-    margin-top: 3%;
+
+@media (max-width: 600px) and (min-width: 0px) {
+  .img_section {
+    width: 25%;
   }
-  .music_card:hover{
-    transform: scale(1.04);
-  }
-  .album_img{
-    width: 100%;
-    height: 180px;
-    float: left;
-  }
-  .album_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .album_name{
-    width: 100%;
+  .img_section img {
     height: 60px;
-    float: left;
+    width: 60px;
+  }
+  .name_and_title h1 {
     font: bold 1.2rem sans-serif;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 25px 0px 0;
   }
-  .share_and_play_btn{
-    width: 100%;
-    height: 60px;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .name_and_title h4 {
+    font: 0.8rem sans-serif;
   }
-  .btns{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(196, 14, 44);
-    margin-right: 10px;
-    border-radius: 0.5rem;
-    color: white;
-    cursor: pointer;
+  .navigation_btn {
+    width: calc(100% - 75%);
+  }
+}
+
+@media (max-width: 640px) and (min-width: 0px) {
+  .music_area {
+    width: 80%;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
-  .reviews{
-    width: 100%;
-    height: calc(100% - 300px);
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 1rem sans-serif;
-    color: white;
-    font-size: 25px;
+  .music_card {
+    margin-left: 0;
+    margin-top: 10%;
   }
+}

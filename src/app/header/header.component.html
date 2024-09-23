@@ -1,16 +1,51 @@
 <header>
     <div class="logo">
-        <img src="/assets/mymusiclogo.png" alt="">
+        <img src="/assets/mymusiclogo.png" alt="" data-aos="zoom-out-down">
     </div>
     <div class="menu">
         <ul>
-            <li class="cool-link" routerLink="/homepage" routerLinkActive="active">HOME</li>
-            <li class="cool-link" routerLink="/artist" routerLinkActive="active">ARTIST</li>
-            <li class="cool-link" routerLink="/all_music" routerLinkActive="active">MUSICS</li>
-            <li class="cool-link" routerLink="/gallery" routerLinkActive="active">GALLERY</li>
-            <li class="cool-link" routerLink="/about" routerLinkActive="active">ABOUT</li>
-            <li class="cool-link" routerLink="/contact" routerLinkActive="active">CONTACT</li>
-            <button id="booking_btn" (click)="openBookingForm()">BOOK TICKETS</button>
+            <li data-aos="zoom-out-down" data-aos-duration="1500" class="cool-link" routerLink="/homepage"
+                routerLinkActive="active">HOME</li>
+            <li data-aos="zoom-out-up" class="cool-link" routerLink="/artist" routerLinkActive="active">ARTIST</li>
+            <li data-aos="zoom-out-down" class="cool-link" routerLink="/all_music" routerLinkActive="active">MUSICS</li>
+            <li data-aos="zoom-out-up" class="cool-link" routerLink="/gallery" routerLinkActive="active">GALLERY</li>
+            <li data-aos="zoom-out-down" class="cool-link" routerLink="/about" routerLinkActive="active">ABOUT</li>
+            <li data-aos="zoom-out-up" class="cool-link" routerLink="/contact" routerLinkActive="active">CONTACT</li>
+            <button id="booking_btn" (click)="openBookingForm()" data-aos="zoom-out-down">BOOK TICKETS</button>
+
+            <!-- mobile menu  -->
+            <button mat-button data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop" id="mobile_menu">
+                <mat-icon id="icon">menu</mat-icon>
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="staticBackdropLabel">Menu</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <button mat-button (click)="windowscroll()" routerLink="/homepage" data-bs-dismiss="offcanvas"
+                        aria-label="Close">HOME</button>
+
+                    <button mat-button (click)="windowscroll()" routerLink="/artist" data-bs-dismiss="offcanvas"
+                        aria-label="Close">ARTIST</button>
+
+                    <button mat-button (click)="windowscroll()" routerLink="/all_music" data-bs-dismiss="offcanvas"
+                        aria-label="Close">MUSICS</button>
+
+                    <button mat-button (click)="windowscroll()" routerLink="/gallery" data-bs-dismiss="offcanvas"
+                        aria-label="Close">GALLERY</button>
+
+                    <button mat-button (click)="windowscroll()" routerLink="/about" data-bs-dismiss="offcanvas"
+                        aria-label="Close">ABOUT</button>
+
+                    <button mat-button (click)="windowscroll()" routerLink="/contact" data-bs-dismiss="offcanvas"
+                        aria-label="Close">CONTACT</button>
+                </div>
+            </div>
+
+
         </ul>
     </div>
 </header>

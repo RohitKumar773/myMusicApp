@@ -35,3 +35,9 @@
 mat-form-field {
   width: 80%;
 }
+
+@media (max-width: 500px) and (min-width: 0px) {
+  .form {
+    width: 290px;
+  }
+}
