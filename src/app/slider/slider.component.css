@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100vh - 80px);
   float: left;
-  background: url("/assets/slider_img.jpg");
+  background: url('../../assets/slider_img.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
